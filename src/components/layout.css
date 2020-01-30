@@ -84,13 +84,12 @@ margin-right: 16px;
 .StatsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* align-self: flex-end; */
   padding-left: 48px;
   justify-items: end;
 }
 
 .Stat {
-  max-width: 140px;
+  max-width: 136px;
 }
 
 .StatNumber {
@@ -111,10 +110,12 @@ margin-right: 16px;
 }
 
 .StatDesc {
-  font-size: 15px;
+  font-size: 14.4px;
+  /* reduced the font size just a lil bit from 15 everywhere 
+  because it was jussting out with lesser line ht here */
   line-height: 18px;
   margin-top: 8px;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   color: #10051D;
   
 }

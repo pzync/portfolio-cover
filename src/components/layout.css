@@ -127,6 +127,7 @@ body {
   
 }
 
+
 /* Making everything mobile responsive */
 
 @media only screen and (max-width: 480px) {
@@ -179,4 +180,65 @@ body {
     font-size: 32px;
   }
 
+}
+
+
+/* Making it work for Tablet - Portrait mode */
+
+@media only screen 
+  and (min-device-width: 720px) 
+  and (max-device-width: 1023px) 
+  and (orientation: portrait) {
+
+    .GrayJacketBg {
+      top: 80px;
+      left: 30px;
+      right: 30px;
+      height: calc(100vh - 110px);
+    }
+  
+    .CoverContainer {
+      width: calc(100vw - 120px);
+    }
+  
+    .H1AndSocialLinkLogos {
+      margin-top: 24vh;
+    }
+  
+    .SmallH1 {
+      font-size: 15px;
+      letter-spacing: 1.2px;
+    }
+  
+    .HugeH1 {
+      font-size: 92px;
+      margin-bottom: 36px;
+      margin-left: -2px;
+    }
+  
+    .SocialLinkLogo {
+      width: 32px;
+      margin-right: 20px;
+    }
+  
+    .HelloAndStatsAtBottom {
+      margin-top: 18vh;
+      align-items: start;
+    }
+
+    .HelloAtBottom {
+      margin-top: -4px;
+      padding-right: 32px;
+    }
+
+    .StatsContainer {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 48px;
+      justify-items: center;
+      grid-gap: 32px
+    }
+
+    .StatNumber {
+      font-size: 32px;
+    }
 }

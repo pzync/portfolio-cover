@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />  
+    <div className="MainContainer">
     <div className="CoverContainer">
     
       <div className="H1AndSocialLinkLogos">
@@ -46,11 +47,13 @@ const IndexPage = () => (
           <div className="Stat">
             <p className="StatNumber"><span className="StatNumberBold">10</span><span className="StatNumberLight">Mn+</span></p>
             <p className="StatDesc">people use my work every day</p>
-          </div>
-          
+          </div>    
         </div>
       </div>
     
+    </div>
+
+    <div className="GrayJacketBg" />
     </div>
   </Layout>
 )

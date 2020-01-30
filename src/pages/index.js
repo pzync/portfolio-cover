@@ -54,6 +54,7 @@ const IndexPage = () => (
     </div>
 
     <div className="GrayJacketBg" />
+    
     </div>
   </Layout>
 )

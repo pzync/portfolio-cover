@@ -42,7 +42,7 @@
   
   @media only screen and (max-width: 720px) {
     .HeaderGroup {
-      padding: 0 40px;
+      padding: 0 60px;
       max-width: calc(100vw - 40px);
     }
   }

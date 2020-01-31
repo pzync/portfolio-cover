@@ -222,7 +222,8 @@ and (max-width: 480px) {
 
   @media only screen 
   and (min-width: 768px)
-  and (max-width:1023px) {
+  and (max-width:1023px)
+  and (orientation: portrait) {
 
     .SmallH1 {
       font-size: 16px;
@@ -233,6 +234,14 @@ and (max-width: 480px) {
       font-size: 92px;
       margin-bottom: 36px;
       margin-left: -2px;
+    }
+
+    .HelloAndStatsAtBottom {
+      align-items: start;
+    }
+
+    .HelloAtBottom {
+      margin-top: -4px
     }
 
     .StatsContainer {

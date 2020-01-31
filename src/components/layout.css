@@ -194,25 +194,25 @@ and (max-width: 480px) {
     }
   
     .HugeH1 {
-      font-size: 80px;
+      font-size: 84px;
       margin-bottom: 36px;
       margin-left: -2px;
     }
 
     .H1AndSocialLinkLogos {
       padding-top: 16vh;
-      margin-left: 20px;
+      margin-left: 30px;
     }
 
     .HelloAndStatsAtBottom {
       display: block;
-      padding: 16vh 20px 8vh 20px;
+      padding: 16vh 30px 8vh 30px;
       margin: 0 0
     }
 
     .StatsContainer {
       justify-items: start;
-      padding: 48px 0;
+      padding: 64px 0;
       grid-gap: 36px;
     
     }

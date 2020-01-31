@@ -130,8 +130,10 @@ body {
   color: #10051D;
 }
 
-/* For Mobile */
-@media only screen and (max-width: 480px) {
+/* For Mobile - Portrait */
+@media only screen 
+and (max-width: 480px) {
+  
   .MainContainer {
     width: 100vw;
     background-color: #f4f4f4;
@@ -179,3 +181,27 @@ body {
   
   }
 }
+
+/* Tablet Portrait - doesn't cover iPad Pro 12.9 portrait */
+
+  @media only screen 
+  and (min-width: 481px)
+  and (max-width:1023px) {
+
+    .SmallH1 {
+      font-size: 16px;
+      letter-spacing: .6px;
+    }
+  
+    .HugeH1 {
+      font-size: 92px;
+      margin-bottom: 36px;
+      margin-left: -2px;
+    }
+
+    .StatsContainer {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      grid-gap: 32px
+    }
+  }

@@ -182,10 +182,46 @@ and (max-width: 480px) {
   }
 }
 
+/* The weird widths between mobile to tablet */
+
+@media only screen 
+  and (min-width: 481px)
+  and (max-width: 767px) {
+
+    .SmallH1 {
+      font-size: 14.5px;
+      letter-spacing: 1px;
+    }
+  
+    .HugeH1 {
+      font-size: 80px;
+      margin-bottom: 36px;
+      margin-left: -2px;
+    }
+
+    .H1AndSocialLinkLogos {
+      padding-top: 16vh;
+      margin-left: 20px;
+    }
+
+    .HelloAndStatsAtBottom {
+      display: block;
+      padding: 16vh 20px 8vh 20px;
+      margin: 0 0
+    }
+
+    .StatsContainer {
+      justify-items: start;
+      padding: 48px 0;
+      grid-gap: 36px;
+    
+    }
+  }
+
 /* Tablet Portrait - doesn't cover iPad Pro 12.9 portrait */
 
   @media only screen 
-  and (min-width: 481px)
+  and (min-width: 768px)
   and (max-width:1023px) {
 
     .SmallH1 {

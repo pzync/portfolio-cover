@@ -123,10 +123,59 @@ body {
 .StatDesc {
   font-size: 14.4px;
   /* reduced the font size just a lil bit from 15 everywhere 
-  because it was jussting out with lesser line ht here */
+  because it was justting out with lesser line height here */
   line-height: 18px;
   margin-top: 8px;
   margin-bottom: 3px;
   color: #10051D;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 480px) {
+  .MainContainer {
+    width: 100vw;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    display: block;
+    height: fit-content;
+  }
+
+  .GrayJacketBg {
+    display: none;
+  }
+
+  .H1AndSocialLinkLogos {
+    padding-top: 16vh;
+    margin-left: 20px;
+  }
+
+  .SmallH1 {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  .HugeH1 {
+    font-size: 72px;
+    margin-bottom: 36px;
+    margin-left: -2px;
+  }
+
+  .SocialLinkLogo {
+    width: 28px;
+    margin-right: 20px;
+  }
+
+  .HelloAndStatsAtBottom {
+    display: block;
+    padding: 16vh 20px 8vh 20px;
+    margin: 0 0
+  }
+
+  .StatsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    padding: 48px 0;
+    grid-row-gap: 48px;
   
+  }
 }

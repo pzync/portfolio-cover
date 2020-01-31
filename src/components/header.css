@@ -4,6 +4,7 @@
     padding: 0 40px 0 60px;
     max-width: calc(100vw - 80px);
     margin: 0 auto;
+    max-height: 80px ; /* added with grid layout */
   }
   
   .HeaderGroup a:hover {

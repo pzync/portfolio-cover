@@ -15,3 +15,118 @@ body {
   animation: EnterAnimation 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+@keyframes EnterAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.MainContainer {
+  height: calc(100vh - 80px);
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr 1fr 1fr 1fr 1fr 30px;
+  grid-template-rows: 30px 1fr 1fr 1fr 1fr 1fr 1fr 30px;
+}
+
+.GrayJacketBg {
+  z-index: -1;
+  background-color: #f4f4f4;
+  grid-row: 1 / 8;
+  grid-column: 2 / 8;
+}
+
+
+.H1AndSocialLinkLogos {
+  grid-row: 4 / 5;
+  grid-column: 2 / 8;
+  margin-left: 30px;
+}
+
+.SmallH1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6600ff;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.HugeH1 {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 96px;
+  font-weight: 900;
+  color: #10051D;
+  letter-spacing: -1.6px;
+  margin-top: 0;
+  margin-left: -4px;
+  margin-bottom: 24px;
+  line-height: 0.9;
+}
+
+.SocialLinkLogo {
+  margin-right: 16px;
+}
+
+.HelloAndStatsAtBottom {
+  grid-row: 7 / 8;
+  grid-column: 2 / 8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  margin: 0 30px 30px 30px;
+}
+
+.HelloAtBottom {
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0 0;
+  padding-right: 32px;;
+}
+
+.StatsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 48px;
+  justify-items: end;
+  grid-column-gap: 16px;
+}
+
+.Stat {
+  max-width: 136px;
+}
+
+.StatNumber {
+  font-size: 36px;
+  color: #6600ff;
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+
+.StatNumberBold {
+  font-weight: 800;
+}
+
+.StatNumberLight {
+  font-weight: 200;
+}
+
+.StatDesc {
+  font-size: 14.4px;
+  /* reduced the font size just a lil bit from 15 everywhere 
+  because it was jussting out with lesser line ht here */
+  line-height: 18px;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  color: #10051D;
+  
+}

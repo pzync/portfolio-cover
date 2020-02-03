@@ -267,3 +267,18 @@ and (max-width: 480px) {
       font-size: calc(96px + 0.073*(100vw - 1280px));
     }
   }
+
+
+  /* large desktops above width 1440px */
+
+  @media only screen 
+  and (min-width: 1441px) {
+    html,
+    body {
+      width: 1440px;
+    }
+
+    .MainContainer {
+      width: 1440px;
+    }
+  }

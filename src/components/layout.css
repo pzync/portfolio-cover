@@ -221,7 +221,7 @@ and (max-width: 480px) {
     }
   }
 
-/* Tablet Portrait - doesn't cover iPad Pro 12.9 portrait */
+/* Tablet Portrait - covers iPad Pro 12.9 too as max width is > 1024px */
 
   @media only screen 
   and (min-width: 768px)
@@ -251,5 +251,19 @@ and (max-width: 480px) {
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
       grid-gap: 32px
+    }
+  }
+
+  /* large desktops from 1281px to 1440px */
+  @media only screen 
+  and (min-width: 1281px)
+  and (max-width: 1440px) {
+    .SmallH1 {
+      font-size: 17px;
+      letter-spacing: 1.2px;
+    }
+
+    .HugeH1 {
+      font-size: calc(96px + 0.073*(100vw - 1280px));
     }
   }

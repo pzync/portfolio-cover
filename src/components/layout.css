@@ -131,6 +131,9 @@ body {
   margin-top: 8px;
   margin-bottom: 3px;
   color: #10051D;
+  /* the max width prop because on Safari and iOS, the first line
+  is going way to long */
+  max-width: 15ch;
 }
 
 /* For Mobile - Portrait */
